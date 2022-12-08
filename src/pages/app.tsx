@@ -3,7 +3,6 @@ import { TopLevelModals } from '../components/Modals/topLevelModals';
 import { Header } from '../components/header';
 
 function App() {
-
 	return (
 		<>
 			<TopLevelModals/>
