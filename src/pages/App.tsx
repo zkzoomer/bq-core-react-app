@@ -1,12 +1,8 @@
-import { useDispatch } from 'react-redux'
-
-import '../styles/App.css';
+import '../styles/app.css';
 import { TopLevelModals } from '../components/Modals/topLevelModals';
 import { Header } from '../components/header';
 
-
 function App() {
-	const dispatch = useDispatch()
 
 	return (
 		<>

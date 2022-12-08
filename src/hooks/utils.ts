@@ -20,6 +20,6 @@ export const isValidAddress = (toCheck: string) => {
 }
 
 export const toAddress = (protoAddress: string) => {
-    if (!isValidAddress(protoAddress)) throw 'Not a valid address'
+    if (!isValidAddress(protoAddress)) throw Error('Not a valid address')
     return ethers.utils.getAddress(protoAddress)
 }

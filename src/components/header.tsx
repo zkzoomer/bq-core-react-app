@@ -6,9 +6,9 @@ import Jazzicon from "@metamask/jazzicon";
 
 import { theme } from '../styles'
 import { IRootState } from '../state';
-import { toHex, truncateAddress } from '../hooks/utils';
+import { truncateAddress } from '../hooks/utils';
 import { setCorrectChain } from '../state/chain/reducer';
-import { ALL_SUPPORTED_CHAIN_IDS, CHAIN_IDS_NETWORK_PARAMETERS, CHAIN_IDS_TO_NAMES } from '../constants/chains';
+import { CHAIN_IDS_NETWORK_PARAMETERS, CHAIN_IDS_TO_NAMES } from '../constants/chains';
 import { connectors } from './connectors';
 
 const Wrapper = styled.div`
@@ -110,14 +110,14 @@ export const Header: FC = (): ReactElement => {
         account,
         activate,
         deactivate,
-        active,
-        error
+        active
     } = useWeb3React();
 
     // Connect on load if account was left connected
     useEffect(() => {
         const provider = window.localStorage.getItem("provider");
         if (provider) activate(connectors[provider]);
+    // eslint-disable-next-line
     }, []);
 
     useEffect(() => {
@@ -126,6 +126,7 @@ export const Header: FC = (): ReactElement => {
         } else {
             dispatch(setCorrectChain(false))
         }
+    // eslint-disable-next-line
     }, [chainId, selectedChain])
 
     const handleConnect = () => {

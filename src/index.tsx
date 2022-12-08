@@ -5,7 +5,7 @@ import { Web3ReactProvider } from "@web3-react/core";
 import { ethers } from "ethers";
 
 import './styles/index.css';
-import App from './pages/App';
+import App from './pages/app';
 import store from './state';
 
 const root = ReactDOM.createRoot(
