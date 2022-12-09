@@ -4,11 +4,11 @@ import styled, { css } from 'styled-components'
 import { useWeb3React } from '@web3-react/core';
 import Jazzicon from "@metamask/jazzicon";
 
-import { theme } from '../styles'
-import { IRootState } from '../state';
-import { truncateAddress } from '../hooks/utils';
-import { setCorrectChain } from '../state/chain/reducer';
-import { CHAIN_IDS_NETWORK_PARAMETERS, CHAIN_IDS_TO_NAMES } from '../constants/chains';
+import { theme } from '../../styles'
+import { IRootState } from '../../state';
+import { truncateAddress } from '../../hooks/utils';
+import { setCorrectChain } from '../../state/chain/reducer';
+import { CHAIN_IDS_NETWORK_PARAMETERS, CHAIN_IDS_TO_NAMES } from '../../constants/chains';
 import { connectors } from './connectors';
 
 const Wrapper = styled.div`
