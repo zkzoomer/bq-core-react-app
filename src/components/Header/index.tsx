@@ -1,4 +1,4 @@
-import { FC, ReactElement, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import styled, { css } from 'styled-components'
 import { useWeb3React } from '@web3-react/core';
@@ -100,7 +100,7 @@ const StyledIdenticon = styled.div`
         display: none;
     }
 `
-export const Header: FC = (): ReactElement => {
+export default function Header() {
     const selectedChain = useSelector<IRootState, string>(state => state.chain.selectedChain);
     const correctChain = useSelector<IRootState, boolean>(state => state.chain.correctChain);
     const dispatch = useDispatch();

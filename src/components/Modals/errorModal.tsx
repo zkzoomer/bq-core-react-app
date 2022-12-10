@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback, FC, ReactElement } from 'react';
+import { useRef, useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
@@ -88,7 +88,7 @@ const CloseModalButton = styled(MdClose)`
 `;
 
 // TODO: modal not having a smooth transition down
-export const ErrorModal: FC = (): ReactElement => {
+export default function ErrorModal() {
     const errorMessage = useSelector<IRootState, string[]>(state => state.error.errorMessage);
     const dispatch = useDispatch();
     const domNode = useRef<HTMLInputElement>()
