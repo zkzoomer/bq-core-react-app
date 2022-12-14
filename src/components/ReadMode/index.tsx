@@ -1,5 +1,12 @@
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+    width: 80%;
+    justify-content: center;
+`
+
 export default function ReadMode() {
     return(
-        <div>read mode</div>
+        <Wrapper>read mode</Wrapper>
     )
 }
