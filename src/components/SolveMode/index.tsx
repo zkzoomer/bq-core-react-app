@@ -1,12 +1,21 @@
-import styled from "styled-components"
 
-const Wrapper = styled.div`
-    width: 80%;
-    justify-content: center;
-`
+import {
+    Wrapper,
+    Button
+} from "./components"
 
 export default function SolveMode() {
     return(
-        <Wrapper>solve mode</Wrapper>
+        <Wrapper>
+            <Button isEnabled={true}>
+                Grade Solution
+            </Button>
+            <Button isEnabled={true}>
+                Generate Proof
+            </Button>
+            <Button isEnabled={false}>
+                Send Transaction
+            </Button>
+        </Wrapper>
     )
 }

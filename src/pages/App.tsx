@@ -28,6 +28,7 @@ const Wrapper = styled.div`
 		align-items: center;
 
 		@media screen and (max-width: ${theme.breakpoint}px) {
+			padding-top: 30px;
 			flex-direction: column;
 			width: 90% !important;
     	}
