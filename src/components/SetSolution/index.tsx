@@ -54,7 +54,7 @@ const InputBox = styled.input`
     width: 100%;
     height: 21px;
     border-radius: 5px;
-    margin: 0px 0px 4px 0px;
+    margin: 0px 5px 10px 5px;
     box-shadow: 2px 2px 2px 1px var(--main-text);
     border: 1px solid var(--main-text);
     text-align: center;
@@ -66,7 +66,7 @@ const InputBox = styled.input`
         outline: 0;
         border: 1px solid var(--alt-text);
         box-shadow: 0 0 0 white;
-        margin: 2px 0px 2px 0px;
+        margin: 2px 5px 8px 5px;
     }
 `
 
