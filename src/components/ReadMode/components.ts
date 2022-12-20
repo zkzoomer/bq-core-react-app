@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { RxExternalLink } from "react-icons/rx"
 import { theme } from "../../styles"
 
 export const Wrapper = styled.div`
@@ -57,5 +56,23 @@ export const Holders = styled.div`
     @media screen and (max-width: ${theme.breakpoint}px) {
         justify-content: center;
         align-items: center;
+    }
+`
+
+export const SpinnerWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--alt-text);
+
+    animation: rotation 1.2s infinite linear;
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
     }
 `

@@ -27,3 +27,26 @@ export const Button = styled.button<{ isEnabled: boolean }>`
         box-shadow: 0 0 0 white;
     }
 `
+
+export const SpinnerWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--alt-text);
+    background-color: transparent;
+
+    animation: rotation 1.2s infinite linear;
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+
+    > * {
+        background-color: transparent;
+    }
+`

@@ -2,14 +2,14 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit'
 
 import answer from './answer/reducer'
 import chain from './chain/reducer';
-import error from './error/reducer'
+import message from './message/reducer'
 import modal from './modal/reducer';
 
 const store = configureStore({
     reducer: {
         answer,
         chain,
-        error,
+        message,
         modal,
     }
 })
@@ -17,7 +17,7 @@ const store = configureStore({
 const rootReducer = combineReducers({
     answer,
     chain,
-    error,
+    message,
     modal
 })
 

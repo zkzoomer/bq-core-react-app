@@ -1,7 +1,7 @@
-import ErrorModal from "./errorModal";
+import MessageModal from "./messageModal";
 
 export default function TopLevelModals() {
     return(
-        <ErrorModal />
+        <MessageModal />
     )
 }

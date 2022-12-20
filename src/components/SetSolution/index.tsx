@@ -77,12 +77,9 @@ export default function SetSolution() {
 
     const possibleAnswers = { 'A': 1, 'B': 2, 'C': 3, 'D': 4 }
 
-    /* dispatch(setMultipleAnswer(_))
-    dispatch(setOpenAnswer(_)) */
-
     const answerButtons = Object.entries(possibleAnswers).map(( [key, value] ) => {
         return(
-            <AnswerButton isClicked={multipleAnswer === value} onClick={() => dispatch(setMultipleAnswer(value))}>
+            <AnswerButton isClicked={multipleAnswer === value} onClick={() => dispatch(setMultipleAnswer(value))} key={key}>
                 {key}
             </AnswerButton>
         )
