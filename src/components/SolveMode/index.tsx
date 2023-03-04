@@ -46,7 +46,8 @@ export default function SolveMode() {
             const readModeTest = await bqTest.solveMode(
                 '1',
                 PROVIDERS.polygon_mumbai,
-                DEPLOYED_CONTRACTS.polygon_mumbai.TesterCreator
+                DEPLOYED_CONTRACTS.polygon_mumbai.TesterCreator,
+                new Array(64).fill('102944615095259103425240479086639746470206460244222727372706423414685149023541')
             )
 
             setTest(readModeTest)
