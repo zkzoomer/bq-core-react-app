@@ -47,7 +47,7 @@ export default function SolveMode() {
                 '2',
                 PROVIDERS.polygon_mumbai,
                 DEPLOYED_CONTRACTS.polygon_mumbai.TesterCreator,
-                new Array(64).fill('457883638539277361920482169119367464201611968669851198460610908962342884291n')
+                new Array(64).fill('457883638539277361920482169119367464201611968669851198460610908962342884291')
             )
 
             setTest(readModeTest)
