@@ -30,9 +30,9 @@ export const CHAIN_IDS_NETWORK_PARAMETERS: { [key: string]: any } = {
 
 export const DEPLOYED_CONTRACTS = {
     "polygon_mumbai": {
-        TesterCreator: "0x403E6BBCB3Ddbe3487c09E8827e5dEf058FE6db4",
-        Credentials: "0x1B54cCe0f362fF29696c710Fa86B9Add98164C88",
-        TestVerifier: "0xE6cd4a671d06D91E71c77173F85E3C043EE74DCF",
+        TesterCreator: "0xECe4239a93F97e52aE88b64228d38e39195B9e9A",
+        Credentials: "0xc8c0A832e04Ea78E46bDf0e133aB525840b1c53d",
+        TestVerifier: "0x3561B5ccD0b058c80884E6a6Fa1205fb0d249c43",
     }, 
 }
 
