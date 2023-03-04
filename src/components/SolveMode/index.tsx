@@ -44,10 +44,10 @@ export default function SolveMode() {
     useEffect(() => {
         const fetchData = async () => {
             const readModeTest = await bqTest.solveMode(
-                '1',
+                '2',
                 PROVIDERS.polygon_mumbai,
                 DEPLOYED_CONTRACTS.polygon_mumbai.TesterCreator,
-                new Array(64).fill('102944615095259103425240479086639746470206460244222727372706423414685149023541')
+                new Array(64).fill('457883638539277361920482169119367464201611968669851198460610908962342884291n')
             )
 
             setTest(readModeTest)

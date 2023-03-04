@@ -38,7 +38,7 @@ export default function ReadMode() {
     useEffect(() => {
         const fetchData = async () => {
             const readModeTest = await bqTest.readMode(
-                '1',
+                '2',
                 PROVIDERS.polygon_mumbai,
                 DEPLOYED_CONTRACTS.polygon_mumbai.TesterCreator
             )
